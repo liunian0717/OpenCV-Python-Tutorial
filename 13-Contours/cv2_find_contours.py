@@ -7,7 +7,7 @@ ret, thresh = cv2.threshold(
     img_gray, 0, 255, cv2.THRESH_BINARY_INV + cv2.THRESH_OTSU)
 
 # 寻找轮廓
-image, contours, hierarchy = cv2.findContours(
+contours, hierarchy = cv2.findContours(
     thresh, cv2.RETR_TREE, cv2.CHAIN_APPROX_SIMPLE)
 
 cnt = contours[1]

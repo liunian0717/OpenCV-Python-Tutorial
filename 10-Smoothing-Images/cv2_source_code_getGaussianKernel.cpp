@@ -1,3 +1,5 @@
+#include <opencv2/opencv.hpp>
+
 cv::Mat cv::getGaussianKernel(int n, double sigma, int ktype)
 {
     // 对于常见的卷积核，无需计算，直接查表

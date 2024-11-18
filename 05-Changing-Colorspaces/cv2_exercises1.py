@@ -6,7 +6,9 @@ import numpy as np
 # Green：[[[ 60 255 255]]]
 # Red：[[[  0 255 255]]]
 
-capture = cv2.VideoCapture(1)
+path = "/home/pi/Downloads/OpenCV-Python-Tutorial/03-Open-Camera/demo_video.mp4" #add when test
+# capture = cv2.VideoCapture(1)
+capture = cv2.VideoCapture(path)     #add when test
 
 # 蓝色的范围
 lower_blue = np.array([100, 110, 110])

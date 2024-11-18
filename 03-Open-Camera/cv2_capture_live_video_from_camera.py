@@ -1,7 +1,7 @@
 import cv2
 
 # 1.打开摄像头
-capture = cv2.VideoCapture(2)
+capture = cv2.VideoCapture('demo_video.mp4')
 
 # 2.获取捕获的分辨率
 width, height = capture.get(3), capture.get(4)

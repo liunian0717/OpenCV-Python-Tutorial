@@ -23,7 +23,9 @@ print(hsv_blue)  # [[[120 255 255]]]
 
 
 # 3.追踪蓝色物体
-capture = cv2.VideoCapture(0)
+path = "/home/pi/Downloads/OpenCV-Python-Tutorial/03-Open-Camera/demo_video.mp4" #add when test
+# capture = cv2.VideoCapture(0)      #dispose when test
+capture = cv2.VideoCapture(path)     #add when test
 
 # 蓝色的范围，不同光照条件下不一样，可灵活调整
 lower_blue = np.array([100, 110, 110])
@@ -45,6 +47,6 @@ while(True):
     cv2.imshow('frame', frame)
     cv2.imshow('mask', mask)
     cv2.imshow('res', res)
-
+  
     if cv2.waitKey(1) == ord('q'):
         break
