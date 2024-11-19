@@ -1,6 +1,8 @@
 import cv2
+# from PIL import Image
 import matplotlib.image as pli
 import matplotlib.pyplot as plt
+
 
 # 1.显示灰度图
 img = cv2.imread('lena.jpg', 0)
